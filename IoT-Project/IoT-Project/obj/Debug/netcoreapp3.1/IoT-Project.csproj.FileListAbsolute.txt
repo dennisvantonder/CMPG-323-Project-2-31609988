@@ -135,3 +135,9 @@ C:\Users\Dennis.VanTonder\Source\Repos\dennisvantonder\CMPG-323-Project-2-316099
 C:\Users\Dennis.VanTonder\Source\Repos\dennisvantonder\CMPG-323-Project-2-31609988\IoT-Project\IoT-Project\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\Dennis.VanTonder\Source\Repos\dennisvantonder\CMPG-323-Project-2-31609988\IoT-Project\IoT-Project\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\Dennis.VanTonder\Source\Repos\dennisvantonder\CMPG-323-Project-2-31609988\IoT-Project\IoT-Project\obj\Debug\netcoreapp3.1\IoT-Project.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Dennis.VanTonder\Source\Repos\dennisvantonder\CMPG-323-Project-2-31609988\IoT-Project\IoT-Project\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Dennis.VanTonder\Source\Repos\dennisvantonder\CMPG-323-Project-2-31609988\IoT-Project\IoT-Project\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\Dennis.VanTonder\Source\Repos\dennisvantonder\CMPG-323-Project-2-31609988\IoT-Project\IoT-Project\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\Dennis.VanTonder\Source\Repos\dennisvantonder\CMPG-323-Project-2-31609988\IoT-Project\IoT-Project\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\Dennis.VanTonder\Source\Repos\dennisvantonder\CMPG-323-Project-2-31609988\IoT-Project\IoT-Project\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
+C:\Users\Dennis.VanTonder\Source\Repos\dennisvantonder\CMPG-323-Project-2-31609988\IoT-Project\IoT-Project\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
