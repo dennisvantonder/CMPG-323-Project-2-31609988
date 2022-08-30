@@ -27,8 +27,7 @@ namespace IoT_Project.Models
         {
             if (!optionsBuilder.IsConfigured)
             {
-#warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
-                optionsBuilder.UseSqlServer("Server=tcp:zacmpg323sqldb.database.windows.net,1433;Initial Catalog=sqldb-connected-office;Persist Security Info=False;User ID=serviceadmin;Password=cmpgadmin@123;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
+                optionsBuilder.UseSqlServer("Name=DefaultConnection");
             }
         }
 
