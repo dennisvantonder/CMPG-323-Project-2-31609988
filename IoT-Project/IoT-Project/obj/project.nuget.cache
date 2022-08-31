@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nZOrFYfxSd6MTrwfIS0XRyzux2sY9kFKjqz16XaNM1aNtusZQyIjb5rxKnrisYzT+Krtks+BEZTzbEgLmwkojw==",
+  "dgSpecHash": "FxH0uIRGjN4e+eyCAicsv4zVugTchDHtQ7G/6uzvmin98F2MSJjiBA5SQc7Qujgzqr5tWGttONLMaaOx8k9Dlg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Dennis.VanTonder\\Source\\Repos\\dennisvantonder\\CMPG-323-Project-2-31609988\\IoT-Project\\IoT-Project\\IoT-Project.csproj",
+  "projectFilePath": "C:\\Users\\Dennis.VanTonder\\source\\repos\\dennisvantonder\\CMPG-323-Project-2-31609988\\IoT-Project\\IoT-Project\\IoT-Project.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Dennis.VanTonder\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",
     "C:\\Users\\Dennis.VanTonder\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",

@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Dennis.VanTonder\\Source\\Repos\\dennisvantonder\\CMPG-323-Project-2-31609988\\IoT-Project\\IoT-Project\\IoT-Project.csproj": {}
+    "C:\\Users\\Dennis.VanTonder\\source\\repos\\dennisvantonder\\CMPG-323-Project-2-31609988\\IoT-Project\\IoT-Project\\IoT-Project.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Dennis.VanTonder\\Source\\Repos\\dennisvantonder\\CMPG-323-Project-2-31609988\\IoT-Project\\IoT-Project\\IoT-Project.csproj": {
+    "C:\\Users\\Dennis.VanTonder\\source\\repos\\dennisvantonder\\CMPG-323-Project-2-31609988\\IoT-Project\\IoT-Project\\IoT-Project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Dennis.VanTonder\\Source\\Repos\\dennisvantonder\\CMPG-323-Project-2-31609988\\IoT-Project\\IoT-Project\\IoT-Project.csproj",
+        "projectUniqueName": "C:\\Users\\Dennis.VanTonder\\source\\repos\\dennisvantonder\\CMPG-323-Project-2-31609988\\IoT-Project\\IoT-Project\\IoT-Project.csproj",
         "projectName": "IoT-Project",
-        "projectPath": "C:\\Users\\Dennis.VanTonder\\Source\\Repos\\dennisvantonder\\CMPG-323-Project-2-31609988\\IoT-Project\\IoT-Project\\IoT-Project.csproj",
+        "projectPath": "C:\\Users\\Dennis.VanTonder\\source\\repos\\dennisvantonder\\CMPG-323-Project-2-31609988\\IoT-Project\\IoT-Project\\IoT-Project.csproj",
         "packagesPath": "C:\\Users\\Dennis.VanTonder\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Dennis.VanTonder\\Source\\Repos\\dennisvantonder\\CMPG-323-Project-2-31609988\\IoT-Project\\IoT-Project\\obj\\",
         "projectStyle": "PackageReference",
