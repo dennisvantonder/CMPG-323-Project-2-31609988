@@ -48,6 +48,11 @@ namespace IoT_Project.Controllers
         [HttpGet("{id}/Devices")]
         public async Task<ActionResult<Zone>> GetZoneDevices(Guid id)
         {
+            if (!ZoneExists(id))
+            {
+                return NotFound();
+            }
+
             var query = await _context.Zone.Join(_context.Device, zone => zone.ZoneId, device => device.ZoneId, (zone, device) => new
             {
                 Zone = zone,
