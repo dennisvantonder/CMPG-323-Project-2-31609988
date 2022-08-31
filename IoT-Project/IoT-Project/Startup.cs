@@ -71,6 +71,7 @@ using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using Microsoft.OpenApi;
 using Microsoft.OpenApi.Models;
+using IoT_Project.Models;
 
 namespace JWTAuthentication
 {
@@ -87,7 +88,7 @@ namespace JWTAuthentication
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer("name=ConnectionStrings:DefaultConnection"));
+            services.AddDbContext<sqldbconnectedofficeContext>(options => options.UseSqlServer("name=ConnectionStrings:DefaultConnection"));
 
             services.AddSwaggerGen(c => {
                 c.SwaggerDoc("v2", new OpenApiInfo
