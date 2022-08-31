@@ -43,6 +43,19 @@ namespace IoT_Project.Controllers
             return category;
         }
 
+        // Method retrieves all devices that is part of a certain category
+        //GET: api/Categories/5/Devices
+        [HttpGet("{id}/Devices")]
+        public async Task<ActionResult<Zone>> GetCategoryDevices(Guid id)
+        {
+            var query = await _context.Category.Join(_context.Device, category => category.CategoryId, device => device.CategoryId, (category, device) => new
+            {
+                Category = category,
+                Device = device,
+            }).Where(entity => entity.Device.CategoryId == id).Select(entity => entity.Device).ToListAsync();
+            return Ok(query);
+        }
+
         // PUT: api/Categories/5
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.

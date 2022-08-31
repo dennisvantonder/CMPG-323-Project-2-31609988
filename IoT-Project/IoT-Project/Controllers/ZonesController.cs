@@ -43,6 +43,7 @@ namespace IoT_Project.Controllers
             return zone;
         }
 
+        // Method retrieves all devices that are part of a certain zone
         //GET: api/Zones/5/Devices
         [HttpGet("{id}/Devices")]
         public async Task<ActionResult<Zone>> GetZoneDevices(Guid id)
