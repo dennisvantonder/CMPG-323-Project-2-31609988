@@ -43,6 +43,18 @@ namespace IoT_Project.Controllers
             return zone;
         }
 
+        //GET: api/Zones/5/Devices
+        [HttpGet("{id}/Devices")]
+        public async Task<ActionResult<Zone>> GetZoneDevices(Guid id)
+        {
+            var query = await _context.Zone.Join(_context.Device, zone => zone.ZoneId, device => device.ZoneId, (zone, device) => new
+            {
+                Zone = zone,
+                Device = device,
+            }).Where(entity => entity.Device.ZoneId == id).Select(entity => entity.Device).ToListAsync();
+            return Ok(query);
+        }
+
         // PUT: api/Zones/5
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
