@@ -33,7 +33,7 @@ namespace JWTAuthentication
             services.AddSwaggerGen(c => {
                 c.SwaggerDoc("v2", new OpenApiInfo
                 {
-                    Title = "JWTToken_Auth_API",
+                    Title = "Project 2 API",
                     Version = "v2"
                 });
                 c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme()
@@ -46,16 +46,16 @@ namespace JWTAuthentication
                     Description = "JWT Authorization header using the Bearer scheme. \r\n\r\n Enter 'Bearer' [space] and then your token in the text input below.\r\n\r\nExample: \"Bearer 1safsfsdfdfd\"",
                 });
                 c.AddSecurityRequirement(new OpenApiSecurityRequirement {
-        {
-            new OpenApiSecurityScheme {
-                Reference = new OpenApiReference {
-                    Type = ReferenceType.SecurityScheme,
+                    {
+                        new OpenApiSecurityScheme {
+                        Reference = new OpenApiReference {
+                        Type = ReferenceType.SecurityScheme,
                         Id = "Bearer"
-                }
-            },
-            new string[] {}
-        }
-    });
+                         }
+                    },
+                     new string[] {}
+                    }  
+                });
             });
 
             // For Entity Framework  

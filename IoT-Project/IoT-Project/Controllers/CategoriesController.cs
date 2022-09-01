@@ -46,7 +46,7 @@ namespace IoT_Project.Controllers
         // Method retrieves all devices that is part of a certain category
         //GET: api/Categories/5/Devices
         [HttpGet("{id}/Devices")]
-        public async Task<ActionResult<Zone>> GetCategoryDevices(Guid id)
+        public async Task<ActionResult<Category>> GetCategoryDevices(Guid id)
         {
             if (!CategoryExists(id))
             {
@@ -64,6 +64,21 @@ namespace IoT_Project.Controllers
 
         // GET method to retrieve number of zones associated to a specific category
         // GET: api/Gategories/5/zones
+        [HttpGet("{id}/Zones")]
+        public async Task<ActionResult<Category>> GetCategoryZones(Guid id)
+        {
+            if (!CategoryExists(id))
+            {
+                return NotFound();
+            }
+            // NEEDS ATTENTION
+            var query = await _context.Category.Join(_context.Device, category => category.CategoryId, device => device.DeviceId, (category, device) => new
+            {
+                Category = category,
+                Device = device
+            }).Where(e => e.Category.CategoryId == id).Select(entity => entity.Device).ToListAsync();
+            return Ok(query.Count());
+        }
 
         // PUT: api/Categories/5
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
