@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using IoT_Project.Models;
 using Microsoft.AspNetCore.Authorization;
+using System.Threading;
 
 namespace IoT_Project.Controllers
 {
@@ -71,12 +72,16 @@ namespace IoT_Project.Controllers
             {
                 return NotFound();
             }
-            // NEEDS ATTENTION
-            var query = await _context.Category.Join(_context.Device, category => category.CategoryId, device => device.DeviceId, (category, device) => new
+
+            var query = await _context.Category.Join(_context.Device, category => category.CategoryId, device => device.CategoryId, (category, device) => new
             {
                 Category = category,
+                Device =device,
+            }).Join(_context.Zone, device => device.Device.ZoneId, zone => zone.ZoneId, (zone, device) => new
+            {
+                Zone = zone,
                 Device = device
-            }).Where(e => e.Category.CategoryId == id).Select(entity => entity.Device).ToListAsync();
+            }).Where(e => e.Zone.Device.CategoryId == id).Select(e => e.Device.ZoneId).ToListAsync();
             return Ok(query.Count());
         }
 
