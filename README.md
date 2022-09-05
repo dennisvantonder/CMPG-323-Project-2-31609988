@@ -5,6 +5,8 @@ This project is to develop an web application using and API and how API's work. 
 
 The database is hosted in the Cloud on Azure and I have developed an API that will also be hosted on Azure to access the data on the database through a RESTful API. The API is developed using .NET EntityFrameworkCore. To test that the API works and that it can access the database I have used swagger to be the interface to the API to test that we can Create, Read, Update and Delete data in the database.
 ## How to use API:
+1. Navigate to the following website: ... 
+2. The following screen will be displayed:![image](https://user-images.githubusercontent.com/90188915/188458513-e6cd0484-a383-489e-a787-75a4f72889ef.png)
 
 ## Reference list:
 - [Document containing references](https://github.com/dennisvantonder/CMPG-323-Project-2-31609988/blob/main/Reference%20list.docx)
