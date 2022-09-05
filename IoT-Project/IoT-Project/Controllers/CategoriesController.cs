@@ -18,11 +18,13 @@ namespace IoT_Project.Controllers
     {
         private readonly sqldbconnectedofficeContext _context;
 
+        // Constructor
         public CategoriesController(sqldbconnectedofficeContext context)
         {
             _context = context;
         }
 
+        // Get method to retrieve all categories
         // GET: api/Categories
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Category>>> GetCategory()
@@ -30,6 +32,7 @@ namespace IoT_Project.Controllers
             return await _context.Category.ToListAsync();
         }
 
+        // Get method to retrieve a specific category
         // GET: api/Categories/5
         [HttpGet("{id}")]
         public async Task<ActionResult<Category>> GetCategory(Guid id)
@@ -44,7 +47,7 @@ namespace IoT_Project.Controllers
             return category;
         }
 
-        // Method retrieves all devices that is part of a certain category
+        // Get method to retrieve all devices that is part of a certain category
         //GET: api/Categories/5/Devices
         [HttpGet("{id}/Devices")]
         public async Task<ActionResult<Category>> GetCategoryDevices(Guid id)
@@ -85,6 +88,7 @@ namespace IoT_Project.Controllers
             return Ok(query.Count());
         }
 
+        // Put/Patch method to update a category
         // PUT: api/Categories/5
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
@@ -117,6 +121,7 @@ namespace IoT_Project.Controllers
             return NoContent();
         }
 
+        // Method to insert a new category
         // POST: api/Categories
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
@@ -143,6 +148,7 @@ namespace IoT_Project.Controllers
             return CreatedAtAction("GetCategory", new { id = category.CategoryId }, category);
         }
 
+        // Method to delete a category
         // DELETE: api/Categories/5
         [HttpDelete("{id}")]
         public async Task<ActionResult<Category>> DeleteCategory(Guid id)
@@ -159,6 +165,7 @@ namespace IoT_Project.Controllers
             return category;
         }
 
+        // Method to check if a category exists
         private bool CategoryExists(Guid id)
         {
             return _context.Category.Any(e => e.CategoryId == id);

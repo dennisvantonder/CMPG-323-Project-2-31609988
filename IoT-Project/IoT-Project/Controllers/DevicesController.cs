@@ -17,11 +17,13 @@ namespace IoT_Project.Controllers
     {
         private readonly sqldbconnectedofficeContext _context;
 
+        // Constructor
         public DevicesController(sqldbconnectedofficeContext context)
         {
             _context = context;
         }
 
+        // Get method to retrieve all devices
         // GET: api/Devices
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Device>>> GetDevice()
@@ -29,6 +31,7 @@ namespace IoT_Project.Controllers
             return await _context.Device.ToListAsync();
         }
 
+        // Get method to retrieve a specific device
         // GET: api/Devices/5
         [HttpGet("{id}")]
         public async Task<ActionResult<Device>> GetDevice(Guid id)
@@ -43,6 +46,7 @@ namespace IoT_Project.Controllers
             return device;
         }
 
+        // Put/Patch method to update a device
         // PUT: api/Devices/5
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
@@ -75,6 +79,7 @@ namespace IoT_Project.Controllers
             return NoContent();
         }
 
+        // Post method to insert a new device
         // POST: api/Devices
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
@@ -101,6 +106,7 @@ namespace IoT_Project.Controllers
             return CreatedAtAction("GetDevice", new { id = device.DeviceId }, device);
         }
 
+        // Delete method to delete a device
         // DELETE: api/Devices/5
         [HttpDelete("{id}")]
         public async Task<ActionResult<Device>> DeleteDevice(Guid id)
@@ -117,6 +123,7 @@ namespace IoT_Project.Controllers
             return device;
         }
 
+        // Method to check if a device exists
         private bool DeviceExists(Guid id)
         {
             return _context.Device.Any(e => e.DeviceId == id);
