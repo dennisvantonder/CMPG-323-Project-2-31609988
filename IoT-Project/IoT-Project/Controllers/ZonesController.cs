@@ -22,6 +22,7 @@ namespace IoT_Project.Controllers
             _context = context;
         }
 
+        // Get method to retrieve all zones
         // GET: api/Zones
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Zone>>> GetZone()
@@ -29,6 +30,7 @@ namespace IoT_Project.Controllers
             return await _context.Zone.ToListAsync();
         }
 
+        // Get method to retrieve a specific zone
         // GET: api/Zones/5
         [HttpGet("{id}")]
         public async Task<ActionResult<Zone>> GetZone(Guid id)
@@ -43,7 +45,7 @@ namespace IoT_Project.Controllers
             return zone;
         }
 
-        // Method retrieves all devices that are part of a certain zone
+        // Get method to retrieve all devices that are part of a certain zone
         //GET: api/Zones/5/Devices
         [HttpGet("{id}/Devices")]
         public async Task<ActionResult<Zone>> GetZoneDevices(Guid id)
@@ -61,6 +63,7 @@ namespace IoT_Project.Controllers
             return Ok(query);
         }
 
+        // Put/Patch method to update a zone
         // PUT: api/Zones/5
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
@@ -93,6 +96,7 @@ namespace IoT_Project.Controllers
             return NoContent();
         }
 
+        // Post method to insert a new zone
         // POST: api/Zones
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
@@ -119,6 +123,7 @@ namespace IoT_Project.Controllers
             return CreatedAtAction("GetZone", new { id = zone.ZoneId }, zone);
         }
 
+        // Delete method to delete a zone
         // DELETE: api/Zones/5
         [HttpDelete("{id}")]
         public async Task<ActionResult<Zone>> DeleteZone(Guid id)
@@ -135,6 +140,7 @@ namespace IoT_Project.Controllers
             return zone;
         }
 
+        // Method to check if zone exists
         private bool ZoneExists(Guid id)
         {
             return _context.Zone.Any(e => e.ZoneId == id);
