@@ -6,15 +6,11 @@ This project is to develop an web application using and API and how API's work. 
 The database is hosted in the Cloud on Azure and I have developed an API that will also be hosted on Azure to access the data on the database through a RESTful API. The API is developed using .NET EntityFrameworkCore. To test that the API works and that it can access the database I have used swagger to be the interface to the API to test that we can Create, Read, Update and Delete data in the database.
 ## How to use API:
 1. Navigate to the following website: ... 
-2. The following screen will be displayed:![image](https://user-images.githubusercontent.com/90188915/188458513-e6cd0484-a383-489e-a787-75a4f72889ef.png)
+2. Then the following screen will be displayed:![image](https://user-images.githubusercontent.com/90188915/188458513-e6cd0484-a383-489e-a787-75a4f72889ef.png)
+3. From this screen you can read, create, update and delete records of the Categories, Devices and Zone tables, but before you can do any of that you will have to log in first.
+4. To log in go to the Authenticate section, there you will see three Http post methods, one to login and the other 2 is to register new users (normal user and admin user) currently both admin and a normal user has the same rights.![image](https://user-images.githubusercontent.com/90188915/188459544-c21de9e3-9129-45c1-8d55-b1d7620d0a0d.png)
+5. Select the /login method to log in, then click on the Try it out button and enter the username and password and then just click on execute.![image](https://user-images.githubusercontent.com/90188915/188460036-3316592b-f7b4-444e-b643-0f73172e8437.png)
+6. After a successful login you will get a response with a token, copy that token and navigate to the Authorize button.![image](https://user-images.githubusercontent.com/90188915/188460414-26405262-8d1f-4b0c-8d90-f9fb773c42e8.png) The following window will open where you should type "Bearer" and then past your token in after the word Bearer.![image](https://user-images.githubusercontent.com/90188915/188460718-a2f99c0d-aad5-4028-ad9b-2c970913f909.png)
 
 ## Reference list:
 - [Document containing references](https://github.com/dennisvantonder/CMPG-323-Project-2-31609988/blob/main/Reference%20list.docx)
-### All reference links:
-- [Async programming](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/async/)
-- [Join two entities in .NET using EntityFrameworkCore](https://jd-bots.com/2022/01/24/join-two-entities-in-net-core-using-lambda-and-entity-framework-core/)
-- [Joining in EF core](https://entityframeworkcore.com/querying-data-joining#:~:text=Entity%20Framework%20Core%20Joining&text=In%20SQL%2C%20a%20JOIN%20clause,using%20the%20Join()%20method.)
-- [Connection strings](https://docs.microsoft.com/en-us/ef/core/miscellaneous/connection-strings)
-- [Managing Connection Strings in Entity Framework Core](https://www.learnentityframeworkcore.com/connection-strings)
-- [Reading Entity Framework Core connection string from appSettings.json](https://davecallan.com/reading-entity-framework-core-connection-string-appsettings/)
-- [.gitignore File – How to Ignore Files and Folders in Git](https://www.freecodecamp.org/news/gitignore-file-how-to-ignore-files-and-folders-in-git/)
