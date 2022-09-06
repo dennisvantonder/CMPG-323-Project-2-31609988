@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QdcqarBn6MbBz9oUH3QCcXKUVJo1H6jKPZNuz/DhuVhvNEacxOwEcDGAnXBNwUuG7eLQS4MIU1PN31Rn9DAcdQ==",
+  "dgSpecHash": "Uh9vA32TqepH7wgmgFRKSRfRrtcF/uaF0loctzf8I5URD/CB4/0Eo++CSKO2xLx1jgYziD7TXO7NSrnVTdnm6Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Dennis.VanTonder\\Source\\Repos\\dennisvantonder\\CMPG-323-Project-2-31609988\\IoT-Project\\IoT-Project\\IoT-Project.csproj",
+  "projectFilePath": "C:\\Users\\Dennis.VanTonder\\source\\repos\\dennisvantonder\\CMPG-323-Project-2-31609988\\IoT-Project\\IoT-Project\\IoT-Project.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Dennis.VanTonder\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\Dennis.VanTonder\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",
