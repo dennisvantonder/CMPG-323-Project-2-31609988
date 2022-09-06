@@ -140,3 +140,4 @@ C:\Users\Dennis.VanTonder\Source\Repos\dennisvantonder\CMPG-323-Project-2-316099
 C:\Users\Dennis.VanTonder\Source\Repos\dennisvantonder\CMPG-323-Project-2-31609988\IoT-Project\IoT-Project\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\Users\Dennis.VanTonder\Source\Repos\dennisvantonder\CMPG-323-Project-2-31609988\IoT-Project\IoT-Project\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
 C:\Users\Dennis.VanTonder\Source\Repos\dennisvantonder\CMPG-323-Project-2-31609988\IoT-Project\IoT-Project\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\Dennis.VanTonder\source\repos\dennisvantonder\CMPG-323-Project-2-31609988\IoT-Project\IoT-Project\bin\Debug\netcoreapp3.1\appsettings.json
