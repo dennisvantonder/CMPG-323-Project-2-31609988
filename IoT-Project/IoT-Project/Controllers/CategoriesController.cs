@@ -6,20 +6,25 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using IoT_Project.Models;
+using Microsoft.AspNetCore.Authorization;
+using System.Threading;
 
 namespace IoT_Project.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class CategoriesController : ControllerBase
     {
         private readonly sqldbconnectedofficeContext _context;
 
+        // Constructor
         public CategoriesController(sqldbconnectedofficeContext context)
         {
             _context = context;
         }
 
+        // Get method to retrieve all categories
         // GET: api/Categories
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Category>>> GetCategory()
@@ -27,6 +32,7 @@ namespace IoT_Project.Controllers
             return await _context.Category.ToListAsync();
         }
 
+        // Get method to retrieve a specific category
         // GET: api/Categories/5
         [HttpGet("{id}")]
         public async Task<ActionResult<Category>> GetCategory(Guid id)
@@ -41,6 +47,48 @@ namespace IoT_Project.Controllers
             return category;
         }
 
+        // Get method to retrieve all devices that is part of a certain category
+        //GET: api/Categories/5/Devices
+        [HttpGet("{id}/Devices")]
+        public async Task<ActionResult<Category>> GetCategoryDevices(Guid id)
+        {
+            if (!CategoryExists(id))
+            {
+                return NotFound();
+            }
+
+            var query = await _context.Category.Join(_context.Device, category => category.CategoryId, device => device.CategoryId, (category, device) => new
+            {
+                Category = category,
+                Device = device,
+            }).Where(entity => entity.Device.CategoryId == id).Select(entity => entity.Device).ToListAsync();
+
+            return Ok(query);
+        }
+
+        // GET method to retrieve number of zones associated to a specific category
+        // GET: api/Gategories/5/zones
+        [HttpGet("{id}/Zones")]
+        public async Task<ActionResult<Category>> GetCategoryZones(Guid id)
+        {
+            if (!CategoryExists(id))
+            {
+                return NotFound();
+            }
+
+            var query = await _context.Category.Join(_context.Device, category => category.CategoryId, device => device.CategoryId, (category, device) => new
+            {
+                Category = category,
+                Device =device,
+            }).Join(_context.Zone, device => device.Device.ZoneId, zone => zone.ZoneId, (zone, device) => new
+            {
+                Zone = zone,
+                Device = device
+            }).Where(e => e.Zone.Device.CategoryId == id).Select(e => e.Device.ZoneId).ToListAsync();
+            return Ok(query.Count());
+        }
+
+        // Put/Patch method to update a category
         // PUT: api/Categories/5
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
@@ -73,6 +121,7 @@ namespace IoT_Project.Controllers
             return NoContent();
         }
 
+        // Method to insert a new category
         // POST: api/Categories
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
@@ -99,6 +148,7 @@ namespace IoT_Project.Controllers
             return CreatedAtAction("GetCategory", new { id = category.CategoryId }, category);
         }
 
+        // Method to delete a category
         // DELETE: api/Categories/5
         [HttpDelete("{id}")]
         public async Task<ActionResult<Category>> DeleteCategory(Guid id)
@@ -115,6 +165,7 @@ namespace IoT_Project.Controllers
             return category;
         }
 
+        // Method to check if a category exists
         private bool CategoryExists(Guid id)
         {
             return _context.Category.Any(e => e.CategoryId == id);
