@@ -1,5 +1,4 @@
 C:\Users\Dennis.VanTonder\source\repos\dennisvantonder\CMPG-323-Project-2-31609988\IoT-Project\IoT-Project\bin\Debug\netcoreapp3.1\appsettings.Development.json
-C:\Users\Dennis.VanTonder\source\repos\dennisvantonder\CMPG-323-Project-2-31609988\IoT-Project\IoT-Project\bin\Debug\netcoreapp3.1\appsettings.json
 C:\Users\Dennis.VanTonder\source\repos\dennisvantonder\CMPG-323-Project-2-31609988\IoT-Project\IoT-Project\bin\Debug\netcoreapp3.1\IoT-Project.exe
 C:\Users\Dennis.VanTonder\source\repos\dennisvantonder\CMPG-323-Project-2-31609988\IoT-Project\IoT-Project\bin\Debug\netcoreapp3.1\IoT-Project.deps.json
 C:\Users\Dennis.VanTonder\source\repos\dennisvantonder\CMPG-323-Project-2-31609988\IoT-Project\IoT-Project\bin\Debug\netcoreapp3.1\IoT-Project.runtimeconfig.json
