@@ -18,5 +18,13 @@ Navigate to the Authorize button.
 9. Click on the try it out button to test the endpoint. You will then see an execute button to run the method. ![image](https://user-images.githubusercontent.com/90188915/188869788-80a705a5-9687-4ea8-9a01-31c2448fb0bf.png)
 After you have executed an endpoint you will get a response like the following: ![image](https://user-images.githubusercontent.com/90188915/188870069-e79fd665-1ca8-45c9-9937-ffe7e2d30450.png)
 10. If a method requires an ID, first run the get method to retrieve all the records and then copy and paste the Id you are interested in, into the id field. Then execute the method to view te results. ![image](https://user-images.githubusercontent.com/90188915/188870161-4eca2cbb-d0e9-4b92-af51-01c306751bd7.png)
+
+### How the ID's wprk for each table:
+The Id's of each table is a uniqueIdentifier value. The Id's looks like this: 3fa85f64-5000-4500-d301-2c963f66afa6,
+- The first 4 digit number indicates the category ID
+- The second 4 digit number indicates the zone ID
+- The third value is a d with 3 numbers to show the device ID
+
+When adding a new table you can just increment the value for the table you are working with. A new category id would be 3fa85f64-5001-4562-d301-2c963f66afa6 and so on.
 ## Reference list:
 - [Document containing references](https://github.com/dennisvantonder/CMPG-323-Project-2-31609988/blob/main/Reference%20list.docx)
