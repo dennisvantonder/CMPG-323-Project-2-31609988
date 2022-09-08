@@ -9,7 +9,7 @@ The database is hosted in the Cloud on Azure and I have developed an API that wi
 2. Then the following screen will be displayed:![image](https://user-images.githubusercontent.com/90188915/188458513-e6cd0484-a383-489e-a787-75a4f72889ef.png)
 3. From this screen you can read, create, update and delete records of the Categories, Devices and Zone tables, but before you can do any of that you will have to log in first.
 4. To log in go to the Authenticate section, there you will see 3 Http post methods, 1 to login and the other 2 is to register new users (normal user and admin user) currently both admin and a normal user has the same rights.![image](https://user-images.githubusercontent.com/90188915/188459544-c21de9e3-9129-45c1-8d55-b1d7620d0a0d.png)
-5. Select the /login method to log in, then click on the Try it out button and enter the username and password and then click on execute.![image](https://user-images.githubusercontent.com/90188915/188460036-3316592b-f7b4-444e-b643-0f73172e8437.png)
+5. Select the /login method to log in, then click on the Try it out button and enter the username: Dennis or Piet and password: Dennis@123 or Piet@123 and then click on execute.![image](https://user-images.githubusercontent.com/90188915/188460036-3316592b-f7b4-444e-b643-0f73172e8437.png)
 6. After a successful login you will get a response with a token, copy that token. ![image](https://user-images.githubusercontent.com/90188915/188868792-9a88bcfe-d241-47c4-9f4c-4828127a962c.png)
 Navigate to the Authorize button.
 ![image](https://user-images.githubusercontent.com/90188915/188460414-26405262-8d1f-4b0c-8d90-f9fb773c42e8.png) 
