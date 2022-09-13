@@ -29,3 +29,7 @@ The Id's of each table is a uniqueIdentifier value. The Id's looks like this: 3f
 When adding a new table you can just increment the value for the table you are working with. A new category id would be 3fa85f64-5001-4562-d301-2c963f66afa6 and so on.
 ## Reference list:
 - [Document containing references](https://github.com/dennisvantonder/CMPG-323-Project-2-31609988/blob/main/Reference%20list.docx)
+
+## API endpoints:
+- ![image](https://user-images.githubusercontent.com/90188915/189925532-c4b76316-a5b6-4b71-bea5-ecd2a20e9555.png)
+- ![image](https://user-images.githubusercontent.com/90188915/189925578-3888df7f-da48-473e-b3ea-819424b6bb37.png)
