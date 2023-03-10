@@ -1,5 +1,11 @@
 # API Project
 
+## Subject: IT Developments
+The IT-environment changes at a fast pace. That is why we have a module with content regularly updated to keep up with newer developments in the IT-environment. The module is presented at the end of the degree to allow students to integrate their knowledge from other modules into this module. In the module, a series of projects are undertaken. Self-study and teamwork are important parts of these projects. These projects' goal is to expose the student to new IT challenges and appropriate technology to address these challenges. The development of soft skills is also part of the primary goal of this module.
+## University project:
+This project involved creating a web API with REST, the project is developed with Visual Studio and C# as the core programming language.
+% Author: Dennis van Tonder
+
 ## Overview:
 This project is to develop an web application using and API and how API's work. The basis of the project is that we have a database with 3 tables (Categories, Zones and Devices), these 3 tables contains information on Internet-of-Thing devices. A web application is then used to access the 3 tables on the database, this web application will be used to monitor the devices, zones and categories. With this web app you can create, read, update and delete records. All this is done through an API.
 
