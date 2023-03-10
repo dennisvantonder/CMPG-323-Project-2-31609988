@@ -5,6 +5,8 @@ The IT-environment changes at a fast pace. That is why we have a module with con
 ## University project:
 This project involved creating a web API with REST, the project is developed with Visual Studio and C# as the core programming language. Mark I received for this project was 109%, as I received extra credit.
 
+Feel free to download the project to you machine and have a look!
+
 ## Overview:
 This project is to develop an web application using and API and how API's work. The basis of the project is that we have a database with 3 tables (Categories, Zones and Devices), these 3 tables contains information on Internet-of-Thing devices. A web application is then used to access the 3 tables on the database, this web application will be used to monitor the devices, zones and categories. With this web app you can create, read, update and delete records. All this is done through an API.
 
